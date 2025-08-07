@@ -1,125 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indian Computer Services</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        header {
-            background-color: #1e90ff;
-            padding: 10px 20px;
-            color: white;
-            text-align: center;
-        }
-
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            background-color: #333;
-        }
-
-        nav a {
-            color: white;
-            padding: 12px 20px;
-            text-decoration: none;
-            display: block;
-        }
-
-        nav a:hover {
-            background-color: #575757;
-        }
-
-        .section {
-            padding: 40px;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #1e90ff;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        @media (max-width: 600px) {
-            nav {
-                flex-direction: column;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Computer Services</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #005792;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #0074B7;
+    }
+    nav a {
+      padding: 15px 20px;
+      display: block;
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    nav a:hover,
+    nav a.active {
+      background-color: #003f63;
+    }
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+    footer {
+      background-color: #005792;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    .language-switcher {
+      text-align: center;
+      margin: 10px;
+    }
+    .language-switcher button {
+      margin: 0 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
 </head>
-
 <body>
-    <header>
-        <h1>Indian Computer Services</h1>
-        <p>Your Trusted Computer Learning Center🏫 Indian Computer Services
-"Empowering Every Student with Digital Skills"</p>
-    </header>
 
-    <nav>
-        <a href="index.html">🏠 Home</a>
-        <a href="about.html">📍 About Us</a>
-        <a href="courses.html">🧾 Courses</a>
-        <a href="admission.html">📝 Admission Form</a>
-        <a href="student-corner.html">🎓 Student Corner</a>
-        <a href="gallery.html">🖼️ Gallery</a>
-        <a href="certificate-verification.html">📜 Certificate Verification</a>
-        <a href="result.html">📊 Result</a>
-        <a href="contact.html">📞 Contact</a>
-        <a href="admin-login.html">💻 Admin Login</a>
-        <a href="franchise-login.html">🏢 Franchise Login</a>
-        <a href="head-office.html">🏬 Head Office Panel</a>
-        <a href="language.html">🌐 Multi Language</a>
-    </nav>
+  <header>
+    <h1>Indian Computer Services</h1>
+  </header>
 
-    <div class="section">
-        <h2>Welcome to Indian Computer Services</h2>
-        <p>Empowering Students with Computer Education Across India</p>
-        <p>Explore our wide range of certified courses, admission process, and student services.🏫 Indian Computer Services
-"Empowering Every Student with Digital Skills"
+  <div class="language-switcher">
+    <button onclick="changeLanguage('en')">English</button>
+    <button onclick="changeLanguage('hi')">हिन्दी</button>
+  </div>
 
-Indian Computer Services एक प्रतिष्ठित कंप्यूटर प्रशिक्षण संस्थान है, जो छात्रों को आधुनिक तकनीकी ज्ञान और प्रोफेशनल स्किल्स प्रदान करता है। हमारा उद्देश्य हर छात्र को डिजिटल इंडिया के सपनों में भागीदार बनाना है।
+  <nav>
+    <a href="#" class="active" onclick="setActive(this)">🏠 Home</a>
+    <a href="#" onclick="setActive(this)">📍 About Us</a>
+    <a href="#" onclick="setActive(this)">🧾 Courses</a>
+    <a href="#" onclick="setActive(this)">📝 Admission Form</a>
+    <a href="#" onclick="setActive(this)">🖼️ Gallery</a>
+    <a href="#" onclick="setActive(this)">🎓 Student Corner</a>
+    <a href="#" onclick="setActive(this)">✅ Certificate Verification</a>
+    <a href="#" onclick="setActive(this)">📄 Result Verification</a>
+    <a href="#" onclick="setActive(this)">🏢 Franchise Login</a>
+    <a href="#" onclick="setActive(this)">🔐 Admin Login</a>
+    <a href="#" onclick="setActive(this)">🧭 Head Office Panel</a>
+    <a href="#" onclick="setActive(this)">📞 Contact</a>
+  </nav>
 
-हमारे यहां बेसिक कंप्यूटर कोर्स से लेकर एडवांस्ड टैली, CCC, DTP, Photoshop, Excel, और Programming जैसी कई कोर्सेज कराए जाते हैं। हर कोर्स को प्रैक्टिकल आधारित और industry-ready syllabus के साथ पढ़ाया जाता है।
+  <main>
+    <h2>Welcome to Indian Computer Services</h2>
+    <p>This is the official website.</p>
+  </main>
 
-🌟 Why Choose Us?
-✅ अनुभवी और प्रोफेशनल ट्रेनर
+  <footer>
+    <p>&copy; 2025 Indian Computer Services. All rights reserved.</p>
+  </footer>
 
-✅ लेटेस्ट कंप्यूटर लैब सुविधा
+  <script>
+    function setActive(link) {
+      const links = document.querySelectorAll('nav a');
+      links.forEach(a => a.classList.remove('active'));
+      link.classList.add('active');
+    }
 
-✅ प्रमाण पत्र (Certificate) की सुविधा
+    function changeLanguage(lang) {
+      alert('Language changed to: ' + (lang === 'hi' ? 'हिन्दी' : 'English'));
+      // Real multilingual logic will go here
+    }
+  </script>
 
-✅ 100% Practical Training
-
-✅ आसान Admission Process और छात्र-हितैषी फीस
-
-🎯 Our Mission
-To make every student digitally skilled and self-reliant.
-
-📍 Location
-हमारा संस्थान आपके शहर में students को किफायती दरों पर बेहतरीन कंप्यूटर शिक्षा देने के लिए समर्पित है।</p>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Indian Computer Services. All rights reserved.</p>
-    </footer>
 </body>
-
 </html>
