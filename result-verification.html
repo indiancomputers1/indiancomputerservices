@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Result Verification - Indian Computer Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Indian Computer Services</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="certificate-verification.html">Certificate Verification</a>
+      <a href="result-verification.html">Result Verification</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Result Verification</h2>
+    <p>Enter your Roll Number to check result:</p>
+
+    <form id="resultForm">
+      <input type="text" placeholder="Enter Roll Number" required>
+      <button type="submit">Check Result</button>
+    </form>
+
+    <p id="resultOutput"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Indian Computer Services. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('resultForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const input = e.target.querySelector('input').value;
+      const output = document.getElementById('resultOutput');
+
+      // Dummy data
+      if (input === "ICS2025ROLL001") {
+        output.textContent = "🎓 Name: Ravi Kumar | Course: DCA | Result: PASS";
+        output.style.color = "green";
+      } else {
+        output.textContent = "❌ Result not found.";
+        output.style.color = "red";
+      }
+    });
+  </script>
+</body>
+</html>
