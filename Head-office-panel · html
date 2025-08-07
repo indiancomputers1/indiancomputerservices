@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head Office Panel - Indian Computer Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Indian Computer Services</h1>
+        <h2>Head Office Panel</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="admin-dashboard.html">🧑‍💼 Admin Dashboard</a></li>
+            <li><a href="franchise-login.html">🏢 Franchise Login</a></li>
+            <li><a href="head-office-panel.html">🏬 Head Office Panel</a></li>
+            <li><a href="logout.html">🚪 Logout</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h3>Welcome to Head Office Panel</h3>
+            <p>Here you can manage national-level data, franchise approvals, certificates issued, and reports.</p>
+
+            <ul>
+                <li><a href="#">📊 View All Franchise Data</a></li>
+                <li><a href="#">✅ Approve New Franchise</a></li>
+                <li><a href="#">🎓 Verify Certificate Records</a></li>
+                <li><a href="#">📥 Download Reports</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Indian Computer Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>
