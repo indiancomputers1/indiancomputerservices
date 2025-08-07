@@ -1,60 +1,102 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indian Computer Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
         header {
-            background-color: #003366;
+            background-color: #1e90ff;
+            padding: 10px 20px;
             color: white;
-            padding: 20px;
             text-align: center;
         }
-        section {
-            padding: 20px;
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #333;
         }
-        .about {
-            background-color: white;
-            margin: 20px auto;
-            max-width: 800px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+        nav a {
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            display: block;
         }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+
         footer {
-            background-color: #003366;
+            background-color: #1e90ff;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             position: fixed;
-            width: 100%;
             bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Indian Computer Services</h1>
-        <p>Your Gateway to Computer Education</p>
+        <p>Your Trusted Computer Learning Center</p>
     </header>
 
-    <section class="about">
-        <h2>About Us</h2>
-        <p>
-            Welcome to Indian Computer Services! We provide high-quality computer education and practical training to students of all ages. Our center is dedicated to offering courses in basic computer skills, programming, digital literacy, and much more. Our mission is to empower individuals with the knowledge and skills required in today's digital world.
-        </p>
-    </section>
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="about.html">📍 About Us</a>
+        <a href="courses.html">🧾 Courses</a>
+        <a href="admission.html">📝 Admission Form</a>
+        <a href="student-corner.html">🎓 Student Corner</a>
+        <a href="gallery.html">🖼️ Gallery</a>
+        <a href="certificate-verification.html">📜 Certificate Verification</a>
+        <a href="result.html">📊 Result</a>
+        <a href="contact.html">📞 Contact</a>
+        <a href="admin-login.html">💻 Admin Login</a>
+        <a href="franchise-login.html">🏢 Franchise Login</a>
+        <a href="head-office.html">🏬 Head Office Panel</a>
+        <a href="language.html">🌐 Multi Language</a>
+    </nav>
+
+    <div class="section">
+        <h2>Welcome to Indian Computer Services</h2>
+        <p>Empowering Students with Computer Education Across India</p>
+        <p>Explore our wide range of certified courses, admission process, and student services.</p>
+    </div>
 
     <footer>
         <p>&copy; 2025 Indian Computer Services. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
