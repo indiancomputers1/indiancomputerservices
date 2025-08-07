@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery - Indian Computer Services</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gallery</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="student-corner.html">Student Corner</a>
+            <a href="certificate-verification.html">Certificate Verification</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 style="text-align:center;">Our Moments</h2>
+            <div class="gallery">
+                <img src="images/photo1.jpg" alt="Classroom">
+                <img src="images/photo2.jpg" alt="Lab Session">
+                <img src="images/photo3.jpg" alt="Certificate Distribution">
+                <img src="images/photo4.jpg" alt="Student Activity">
+                <img src="images/photo5.jpg" alt="Front Office">
+                <img src="images/photo6.jpg" alt="Event Day">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Indian Computer Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>
